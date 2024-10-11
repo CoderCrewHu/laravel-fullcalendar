@@ -126,7 +126,7 @@ class Calendar
             return $this->id;
         }
 
-        $this->id = str_random(8);
+        $this->id = bin2hex(random_bytes(4));
 
         return $this->id;
     }
